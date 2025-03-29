@@ -2,12 +2,5 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-gradient-to-tr from-[#00a1ff] to-[#00ff81] min-h-screen flex items-center justify-center;
-}
-
-#root{
-  @apply min-h-screen;
-}
 
 

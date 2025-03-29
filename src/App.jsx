@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-// import './App.css'
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function LoadingScreen() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 2000); // Giả lập thời gian load
+  }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="relative">
+      <motion.h1
+      animate={loading ? {} : { scale: 0, y: "-150vh" }} // Thu nhỏ ra ngoài màn hình
+      transition={{ duration: 1.5, ease: "easeInOut" }}
+      className="fixed text-5xl font-bold text-white w-full top-1/2 transform -translate-y-1/2 z-[100] transition text-center"
+      >
+        <h1>Nhã Thanh</h1>
+      </motion.h1>
+      <motion.div
+        initial={{ scale: 5 }} // Ban đầu to che màn hình
+        animate={loading ? {} : { scale: 0, y: "-150vh" }} // Thu nhỏ ra ngoài màn hình
+        transition={{ duration: 1.5, ease: "easeInOut" }}
+        className="fixed inset-0 w-screen aspect-square bg-indigo-500 rounded-full flex justify-center items-center z-50 mx-auto"
+      >
+        
+      </motion.div>
+    </div>
+    
+  );
 }
-
-export default App

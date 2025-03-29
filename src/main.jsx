@@ -5,9 +5,11 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './index.css'
 import App from './App.jsx'
 import Bio from './bio_page.jsx';
+import LoadingScreen from './App.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Bio />
+    <LoadingScreen/>
   </StrictMode>,
 )
