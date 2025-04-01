@@ -10,7 +10,7 @@ export default function ProfileCard() {
         <img className="relative w-full h-32"  src="/images/card_background.png" alt="card background" />
         <div className="flex flex-col items-center -mt-12">
           <img
-            className="size-44 rounded-full border-4 border-white z-50"
+            className="size-44 rounded-full border-4 border-white z-40"
             src="/images/avatar.png"
             alt="Profile"
           />
@@ -22,7 +22,7 @@ export default function ProfileCard() {
         </div>
         <div className="space-y-3 mt-4 px-10 pb-6">
           <button style={{boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.25)"}} className="relative w-full justify-between font-semibold rounded-full p-3 flex items-center hover:bg-indigo-950 group transition duration-200 ease-in-out px-4"
-            onClick={() => window.open("https://www.facebook.com/nhathanh.nguyentran.75", "_blank")}>
+            onClick={() => window.open("/", "_blank")}>
             <span className="flex items-center gap-2 group-hover:text-white transition duration-200">
                 <img src="/images/portforlio_icon.png" className="size-6 mr-2" alt="" />
                 Visit my portfolio
