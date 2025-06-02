@@ -5,8 +5,8 @@ import { ArrowRight } from "lucide-react";
 
 export default function ProfileCard() {
   return (
-    <div className="flex justify-center items-center  min-h-[100dvh] bg-cyan-400 p-2 text-neutral-900">
-      <div className="max-w-lg w-full h-full bg-white shadow-lg rounded-2xl overflow-hidden">
+    <div className="flex justify-center items-center  h-screen bg-cyan-400 p-2 text-neutral-900">
+      <div className="max-w-lg w-full h-fit bg-white shadow-lg rounded-2xl overflow-hidden">
         <img className="relative w-full h-32"  src="/images/card_background.png" alt="card background" />
         <div className="flex flex-col items-center -mt-12">
           <img
@@ -20,7 +20,7 @@ export default function ProfileCard() {
             Feel free to connect with me through the channels below for collaboration and discussion! 🌟
           </p>
         </div>
-        <div className="space-y-3 mt-4 px-10 pb-6">
+        <div className="flex flex-col gap-3 p-6">
           <button style={{boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.25)"}} className="relative w-full justify-between font-semibold rounded-full p-3 flex items-center hover:bg-indigo-950 group transition duration-200 ease-in-out px-4"
             onClick={() => window.open("/", "_blank")}>
             <span className="flex items-center gap-2 group-hover:text-white transition duration-200">

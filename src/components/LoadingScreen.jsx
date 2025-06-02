@@ -20,7 +20,7 @@ export default function LoadingScreen() {
       transition={{ duration: 1.5, ease: "easeInOut" }}
       className="fixed text-5xl font-bold text-white w-full top-1/2 transform -translate-y-1/2 z-[100] transition text-center"
       >
-        <h1>Nhã Thanh</h1>
+        Nhã Thanh
       </motion.h1>
       <motion.div
         initial={{ scale: 5 }} // Ban đầu to che màn hình
