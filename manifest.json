@@ -1,7 +1,6 @@
 {
-  "name": "My App",
-  "short_name": "App",
-  "start_url": "/",
+  "name": "Nhã Thanh Bio",
+  "short_name": "NT-Bio",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#22d3ee",
