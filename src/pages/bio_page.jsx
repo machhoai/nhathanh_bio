@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function ProfileCard() {
   return (
-    <div className="flex justify-center items-center  h-screen bg-cyan-400 p-2 text-neutral-900">
+    <div className="flex justify-center items-center  h-screen bg-cyan-400 p-2 text-neutral-900 overflow-hidden">
       <div className="max-w-lg w-full h-fit bg-white shadow-lg rounded-2xl overflow-hidden">
         <img className="relative w-full h-32"  src="/images/card_background.png" alt="card background" />
         <div className="flex flex-col items-center -mt-12">
