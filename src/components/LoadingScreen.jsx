@@ -17,7 +17,7 @@ export default function LoadingScreen() {
     <div className="relative">
       <motion.h1
       animate={loading ? {} : { scale: 0, y: "-150vh" }} // Thu nhỏ ra ngoài màn hình
-      transition={{ duration: 1.5, ease: "easeInOut" }}
+      transition={{ duration: 1.0, ease: "easeInOut" }}
       className="fixed text-5xl font-bold text-white w-full top-1/2 transform -translate-y-1/2 z-[100] transition text-center"
       >
         Nhã Thanh

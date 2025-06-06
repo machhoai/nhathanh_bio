@@ -1,13 +1,33 @@
 // import { Card, CardContent } from "@/components/ui/card";
 // import { Button } from "@/components/ui/button";
 // import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Share2 } from "lucide-react";
 
 export default function ProfileCard() {
+
+  const handleShare = () => {
+    if (navigator.canShare) {
+      navigator.share({
+        title: 'Nhã Thanh - Bio Card',
+        text: 'Check out my bio card!',
+        url: 'https://nhathanh.vercel.app/bio',
+      })
+        .then(() => console.log('Chia sẻ thành công'))
+        .catch((error) => console.log('Lỗi khi chia sẻ:', error));
+    } else {
+      alert('Trình duyệt không hỗ trợ chia sẻ');
+    }
+  }
+
   return (
     <div className="flex justify-center items-center  h-[100dvh] bg-cyan-400 p-2 text-neutral-900 overflow-hidden">
-      <div className="max-w-lg w-full h-fit bg-white shadow-lg rounded-2xl overflow-hidden">
-        <img className="relative w-full h-32"  src="/images/card_background.png" alt="card background" />
+      <div className="max-w-lg w-full h-fit bg-white shadow-lg rounded-2xl overflow-hidden relative">
+        <div className="ActionButtons flex absolute top-5 right-5 z-10 text-white">
+          <button className="ShareButton hover:bg-gray-400/50 active:bg-gray-400/50 rounded-xl p-2" onClick={() => handleShare()}>
+            <Share2 className="size-6" />
+          </button>
+        </div>
+        <img className="relative w-full h-32" src="/images/card_background.png" alt="card background" />
         <div className="flex flex-col items-center -mt-12">
           <img
             className="size-44 rounded-full border-4 border-white z-40"
@@ -21,35 +41,35 @@ export default function ProfileCard() {
           </p>
         </div>
         <div className="flex flex-col gap-3 p-6">
-          <button style={{boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.25)"}} className="relative w-full justify-between font-semibold rounded-full p-3 flex items-center hover:bg-indigo-950 group transition duration-200 ease-in-out px-4"
+          <button style={{ boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.25)" }} className="relative w-full justify-between font-semibold rounded-full p-3 flex items-center hover:bg-indigo-950 group transition duration-200 ease-in-out px-4"
             onClick={() => window.open("/", "_blank")}>
             <span className="flex items-center gap-2 group-hover:text-white transition duration-200">
-                <img src="/images/portforlio_icon.png" className="size-6 mr-2" alt="" />
-                Visit my portfolio
+              <img src="/images/portforlio_icon.png" className="size-6 mr-2" alt="" />
+              Visit my portfolio
             </span>
             <span className="bg-indigo-950 text-white size-10 rounded-full absolute right-2  group-hover:bg-white group-hover:text-indigo-950 transition duration-200">
-                <ArrowRight className="m-auto h-full -rotate-45 group-hover:text-indigo-950" size={23} />
-            </span> 
+              <ArrowRight className="m-auto h-full -rotate-45 group-hover:text-indigo-950" size={23} />
+            </span>
           </button>
-          <button style={{boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.25)"}} className="relative w-full justify-between font-semibold rounded-full p-3 flex items-center hover:bg-indigo-950 group transition duration-200 ease-in-out px-4"
-          onClick={() => window.open("https://www.facebook.com/nhathanh.nguyentran.75", "_blank")}>
+          <button style={{ boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.25)" }} className="relative w-full justify-between font-semibold rounded-full p-3 flex items-center hover:bg-indigo-950 group transition duration-200 ease-in-out px-4"
+            onClick={() => window.open("https://www.facebook.com/nhathanh.nguyentran.75", "_blank")}>
             <span className="flex items-center gap-2 group-hover:text-white transition duration-200">
-                <img src="/images/facebook_icon.png" className="size-6 mr-2" alt="" />
-                Facebook
+              <img src="/images/facebook_icon.png" className="size-6 mr-2" alt="" />
+              Facebook
             </span>
             <span className="bg-indigo-950 text-white size-10 rounded-full absolute right-2  group-hover:bg-white group-hover:text-indigo-950 transition duration-200">
-                <ArrowRight className="m-auto h-full -rotate-45 group-hover:text-indigo-950" size={23} />
-            </span> 
+              <ArrowRight className="m-auto h-full -rotate-45 group-hover:text-indigo-950" size={23} />
+            </span>
           </button>
-          <button style={{boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.25)"}} className="relative w-full justify-between font-semibold rounded-full p-3 flex items-center hover:bg-indigo-950 group transition duration-200 ease-in-out px-4"
-          onClick={() => window.open("https://www.instagram.com/nhjh.thanh/", "_blank")}>
+          <button style={{ boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.25)" }} className="relative w-full justify-between font-semibold rounded-full p-3 flex items-center hover:bg-indigo-950 group transition duration-200 ease-in-out px-4"
+            onClick={() => window.open("https://www.instagram.com/nhjh.thanh/", "_blank")}>
             <span className="flex items-center gap-2 group-hover:text-white transition duration-200">
-                <img src="/images/instagram_icon.png" className="size-6 mr-2" alt="" />
-                Instagram
+              <img src="/images/instagram_icon.png" className="size-6 mr-2" alt="" />
+              Instagram
             </span>
             <span className="bg-indigo-950 text-white size-10 rounded-full absolute right-2  group-hover:bg-white group-hover:text-indigo-950 transition duration-200">
-                <ArrowRight className="m-auto h-full -rotate-45 group-hover:text-indigo-950" size={23} />
-            </span> 
+              <ArrowRight className="m-auto h-full -rotate-45 group-hover:text-indigo-950" size={23} />
+            </span>
           </button>
           {/* <button style={{boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.25)"}} className="relative w-full justify-between font-semibold rounded-full p-3 flex items-center hover:bg-indigo-950 group transition duration-200 ease-in-out px-4">
             <span className="flex items-center gap-2 group-hover:text-white transition duration-200">
@@ -60,15 +80,15 @@ export default function ProfileCard() {
                 <ArrowRight className="m-auto h-full -rotate-45 group-hover:text-indigo-950" size={23} />
             </span> 
           </button> */}
-          <button style={{boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.25)"}} className="relative w-full justify-between font-semibold rounded-full p-3 flex items-center hover:bg-indigo-950 group transition duration-200 ease-in-out px-4"
-          onClick={() => alert("Sorry, this feature is not available yet.")}>
+          <button style={{ boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.25)" }} className="relative w-full justify-between font-semibold rounded-full p-3 flex items-center hover:bg-indigo-950 group transition duration-200 ease-in-out px-4"
+            onClick={() => alert("Sorry, this feature is not available yet.")}>
             <span className="flex items-center gap-2 group-hover:text-white transition duration-200">
-                <img src="/images/youtube_icon.png" className="size-6 mr-2" alt="" />
-                My channel
+              <img src="/images/youtube_icon.png" className="size-6 mr-2" alt="" />
+              My channel
             </span>
             <span className="bg-indigo-950 text-white size-10 rounded-full absolute right-2  group-hover:bg-white group-hover:text-indigo-950 transition duration-200">
-                <ArrowRight className="m-auto h-full -rotate-45 group-hover:text-indigo-950" size={23} />
-            </span> 
+              <ArrowRight className="m-auto h-full -rotate-45 group-hover:text-indigo-950" size={23} />
+            </span>
           </button>
         </div>
       </div>

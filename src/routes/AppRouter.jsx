@@ -12,9 +12,6 @@ const AppRouter = () => {
         {/* <Route path="/about" element={<About />} /> */}
         <Route path="/bio" element={<Bio />} />
         <Route path="/login" element={<Login />} />
-        {/* Route bảo vệ chỉ cho phép truy cập nếu đã đăng nhập
-        <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} /> */}
-        {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </Router>
   );
