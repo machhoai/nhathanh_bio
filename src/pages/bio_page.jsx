@@ -82,7 +82,7 @@ export default function ProfileCard() {
         </div>
         <div className="flex overflow-hidden items-center relative h-full py-5">
           <motion.div className="size-full flex justify-center items-center absolute h-fit"
-            animate={!showQR ? { x: 0 } : { x: -1000 }}
+            animate={showQR ? { x: 0 } : { x: -1000 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}>
             <QRCodeCanvas
               value="https://nhathanh.vercel.app/bio"
@@ -103,7 +103,7 @@ export default function ProfileCard() {
           </motion.div>
           <motion.div className="flex flex-col gap-3 px-6 w-full h-fit"
             // initial={{ opacity: 0, y: 20 }}
-            animate={showQR ? { x: 0 } : { x: 1000 }}
+            animate={!showQR ? { x: 0 } : { x: 1000 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}>
             <button style={{ boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.25)" }} className="relative w-full justify-between font-semibold rounded-full p-3 flex items-center hover:bg-indigo-950 group transition duration-200 ease-in-out px-4"
               onClick={() => window.open("/", "_blank")}>
