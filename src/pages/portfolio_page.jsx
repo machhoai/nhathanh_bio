@@ -14,7 +14,7 @@ const PortfolioPage = () => {
                 <img src="/portfolio/page_1/Picture3.png" className="z-0 w-1/3 absolute -top-10 right-0" alt="" />
                 <img src="/portfolio/page_1/Picture4.png" className="z-1 w-1/3 absolute -top-70 right-40" alt="" />
                 <img src="/portfolio/page_1/Picture6.png" className=" w-1/4 absolute top-40 z-0 -right-10" alt="" />
-                <span className="absolute z-1 font-greenth uppercase text-[180pt] xl:text-[280pt] xl:left-40 xl:top-20 md:left-[5%] md:top-1/4 left-5 top-1/4 leading-none">
+                <span className="absolute z-1 font-greenth uppercase text-[180pt] xl:text-[280pt] xl:left-20 xl:top-20 md:left-[5%] md:top-1/4 left-5 top-1/4 leading-none">
                     <span className="flex relative">
                         <p className="text-[#184deb] relative top-10 -rotate-10">P</p>
                         <p className="text-[#184deb]">O</p>
