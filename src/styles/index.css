@@ -1,4 +1,14 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: "Greenth";
+    src: url("/fonts/Greenth_Personal_Use.woff2") format("woff2"),
+        url("/fonts/Greenth_Personal_Use.woff") format("woff"),
+        url("/fonts/Greenth_Personal_Use.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
 
-
+.font-greenth {
+    font-family: "Greenth";
+}
