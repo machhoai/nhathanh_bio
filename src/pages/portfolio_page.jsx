@@ -254,7 +254,6 @@ const PortfolioPage = () => {
                         className="-z-1 w-1/3 absolute top-0 right-0 object-cover"
                         alt=""
                     />
-
                     <div className="content h-full w-full flex flex-col px-[5vw] py-[2vw] text-[#184deb]">
                         <p className="uppercase text-[#184deb] text-[2vw]">Trailer:</p>
                         <div className=" grow h-1/2 my-5">
@@ -271,6 +270,46 @@ const PortfolioPage = () => {
                             <img src="/portfolio/page_6/Picture2.png" className="size-[4vw] relative top-3" alt="" />
                         </a>
                     </div>
+                </div>
+            </section>
+            <section
+                className={`h-screen flex w-full snap-start relative overflow-hidden`}
+            >
+                <div className="backdrop size-full p-[2vw]">
+                    <img src="/portfolio/page_7/Picture1.png" className="-z-1 w-1/3 absolute top-1/4 right-[78%] object-cover" alt="" />
+                    <img src="/portfolio/page_7/Picture2.png" className="-z-1 w-1/3 absolute bottom-0 left-[77%]  object-cover" alt="" />
+
+                    <div class="grid grid-cols-3 grid-rows-[auto_1fr_1fr] gap-y-[1.5vw] gap-x-[1.5vw]">
+
+                        <div class="col-start-1 col-end-4 row-start-1 row-end-2 justify-self-stretch self-stretch">
+                            <div className="flex flex-col text-[#184deb] text-[1.5vw]">
+                                <p className="font-semibold">MV REMAKE: ALRIGHT CỦA THE FLOB</p>
+                                <p className="leading-[1vw] text-[1vw]">2024</p>
+                            </div>
+                        </div>
+
+                        <div class="col-start-1 col-end-2 row-start-2 row-end-3 rounded-2xl overflow-hidden">
+                            <img src="/portfolio/page_7/btsalright_gif2.gif" class="w-full h-full object-cover" alt="" />
+                        </div>
+
+                        <div class="col-start-2 col-end-3 row-start-2 row-end-3 rounded-2xl overflow-hidden">
+                            <img src="/portfolio/page_7/btsalright_gif3.gif" class="w-full h-full object-cover" alt="" />
+                        </div>
+
+                        <div class="col-start-3 col-end-4 row-start-2 row-end-3 rounded-2xl overflow-hidden">
+                            <img src="/portfolio/page_7/btsalright_gif4.gif" class="w-full h-full object-cover" alt="" />
+                        </div>
+
+                        <div class="col-start-1 col-end-3 row-start-3 row-end-4 text-[1.3vw] text-[#184deb] flex flex-col justify-between">
+                            <p><b>Vai trò:</b> Đạo diễn, Biên kịch (kịch bản văn học, kịch bản phân cảnh), hỗ trợ diễn viên, giám sát sản xuất, hỗ trợ hậu kỳ.</p>
+                            <p>MV kể câu chuyện cảm động về An – chàng trai không thể nguôi ngoai nỗi đau mất đi người yêu là Phong. Sau những ngày vùi đầu vào công việc, thuốc thang và trốn tránh thực tại, An dần bị những ký ức ngọt ngào xưa cũ kéo về, thôi thúc anh tìm lại Phong. Trong hành trình đó, An gặp lại hình ảnh, kỷ vật và cuối cùng là một khoảnh khắc kỳ diệu nơi bãi biển – nơi Phong từng rời xa. MV gửi gắm thông điệp: Dù những người thân yêu không còn bên ta, họ vẫn sống mãi trong ký ức và tình yêu để lại. Tất cả rồi sẽ ổn, khi ta học cách trân trọng những điều đã có và tiếp tục sống.</p>
+                        </div>
+
+                        <div class="col-start-3 col-end-4 row-start-3 row-end-4 rounded-2xl overflow-hidden">
+                            <img src="/portfolio/page_7/btsalright_gif1.gif" class="w-full h-full object-cover" alt="" />
+                        </div>
+                    </div>
+
                 </div>
             </section>
         </div >
