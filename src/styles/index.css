@@ -7,6 +7,18 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "PaytoneOne";
+    src: url("/fonts/PaytoneOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 .font-greenth {
     font-family: "Greenth";
+    font-weight: 400 !important;
+}
+
+.font-paytone-one {
+    font-family: "PaytoneOne";
 }

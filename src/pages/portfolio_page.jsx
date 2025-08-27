@@ -179,6 +179,100 @@ const PortfolioPage = () => {
                     <img src="/portfolio/page_3/Picture2.png" className="w-full absolute -bottom-1/30 object-cover" alt="" />
                 </div>
             </section >
+            <section
+                className={`h-screen flex w-full snap-start relative overflow-hidden`}
+            >
+                <div className="backdrop size-full">
+                    <img src="/portfolio/page_4/Picture4.png" className="h-full absolute top-0 left-0 object-cover" alt="" />
+                    <img src="/portfolio/page_4/Picture3.png" className="w-full absolute bottom-0 left-0 object-cover" alt="" />
+                    <div className="main flex h-full w-full items-center justify-start px-[2vw] relative z-1">
+                        <img src="/portfolio/page_4/Picture5.png" className="w-1/5 object-cover absolute" alt="" />
+                        <span className="relative flex flex-col justify-center gap-8 left-[10vw] font-payton-one font-[900] uppercase text-[10vw] leading-none">
+                            <span className="flex relative">
+                                <p className="text-[#fff467] relative top-12 -rotate-8">C</p>
+                                <p className="text-[#fff467] relative top-6 -rotate-9">Á</p>
+                                <p className="text-[#fff467] relative top-1 -rotate-8 mr-[2vw]">C</p>
+                                <p className="text-[#fff467] relative -top-4 -rotate-7">D</p>
+                                <p className="text-[#fff467] relative -top-7 -rotate-4 mr-[2vw]">Ự</p>
+                                <p className="text-[#fff467] relative -top-8 rotate-1">Á</p>
+                                <p className="text-[#fff467] relative -top-7 rotate-2">N</p>
+                            </span>
+                            <span className="flex relative left-[10vw]">
+                                <p className="text-[#ff41a8] relative top-0 -rotate-6">h</p>
+                                <p className="text-[#ff41a8] relative -top-3 -rotate-4">ọ</p>
+                                <p className="text-[#ff41a8] relative -top-4 -rotate-2 mr-[2vw]">c</p>
+                                <p className="text-[#ff41a8] relative -top-4 rotate-0">t</p>
+                                <p className="text-[#ff41a8] relative -top-4 rotate-1">h</p>
+                                <p className="text-[#ff41a8] relative -top-2 rotate-4">u</p>
+                                <p className="text-[#ff41a8] relative top-1 rotate-5">ậ</p>
+                                <p className="text-[#ff41a8] relative top-4 rotate-6">t</p>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section
+                className={`h-screen flex w-full snap-start relative overflow-hidden`}
+            >
+                <div className="backdrop size-full">
+                    <img src="/portfolio/page_5/Picture1.png" className="-z-1 w-1/3 absolute bottom-0 left-[77%] object-cover" alt="" />
+                    <img src="/portfolio/page_5/Picture2.png" className="-z-1 w-1/4 absolute top-1/4 right-5/6 object-cover" alt="" />
+
+                    <div class="flex gap-[20px] h-full flex-col py-[2vw] px-[5vw]">
+                        <div class="w-auto max-h-[500px] grow shrink">
+                            <div class="flex gap-[20px] h-full justify-between items-center flex-row shrink">
+                                <div class="w-auto h-full grow">
+                                    <img src="/portfolio/page_5/Poster1.png" class="w-full h-full object-contain shrink" alt="" />
+                                </div>
+                                <div class="w-auto h-full grow">
+                                    <img src="/portfolio/page_5/Poster2.png" class="w-full h-full object-contain shrink" alt="" />
+                                </div>
+                                <div class="w-auto h-full grow">
+                                    <img src="/portfolio/page_5/Poster3.png" class="w-full h-full object-contain shrink" alt="" />
+                                </div>
+                                <div class="w-auto h-full grow">
+                                    <img src="/portfolio/page_5/Poster4.png" class="w-full h-full object-contain shrink" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-auto grow shrink-0 text-[#184deb] text-[1.3vw]">
+                            <p class="title font-semibold text-[2vw]">PHIM NGẮN: VẾT CHÂN TRUNG THÀNH</p>
+                            <p class="release-year">2023</p>
+                            <p class="my-2"><b>Vai trò:</b> Đạo diễn hình ảnh – Cung cấp bối cảnh & diễn viên</p>
+                            <p> Bộ phim kể về hành trình cảm động của một chú chó từng bị bạo hành, nhưng vẫn luôn giữ sự trung thành và lòng vị tha. Sau khi được một cô gái đưa về nhà, chú tưởng mình đã tìm thấy hạnh phúc. Thế nhưng, những bất ổn trong gia đình mới khiến nó dần cảm thấy cô đơn, bị lạnh nhạt về mặt tinh thần. Khi cố gắng bảo vệ gia đình khỏi những cuộc cãi vã, chú lại bị xua đuổi. Cuối cùng, chú được một cô bé bán vé số cưu mang – người tuy không giàu có, nhưng trao cho nó sự yêu thương chân thành. </p>
+                            <p>"Vết chân trung thành" là lời nhắc nhở nhẹ nhàng nhưng sâu sắc về tình yêu vô điều kiện của động vật, đồng thời lên án nạn bạo hành và sự vô trách nhiệm trong việc chăm sóc thú cưng.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section
+                className="h-screen flex w-full snap-start relative overflow-hidden"
+            >
+                <div className="backdrop size-full">
+                    <img
+                        src="/portfolio/page_6/Picture1.png"
+                        className="-z-1 w-1/3 absolute top-0 right-0 object-cover"
+                        alt=""
+                    />
+
+                    <div className="content h-full w-full flex flex-col px-[5vw] py-[2vw] text-[#184deb]">
+                        <p className="uppercase text-[#184deb] text-[2vw]">Trailer:</p>
+                        <div className=" grow h-1/2 my-5">
+                            <iframe
+                                src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F293747470001190%2F&show_text=false&appId"
+                                className="aspect-video h-full mx-auto"
+                                frameBorder="0"
+                                allowFullScreen={true}
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                            />
+                        </div>
+                        <a href="https://www.facebook.com/share/v/15uXrNHQrR/" className="flex items-center hover:underline mx-auto">
+                            <p className="uppercase text-[#184deb] text-[1.3vw]">FULL PHIM NGẮN TẠI PAGE MCQ2O STUDIO TRÊN FACEBOOK </p>
+                            <img src="/portfolio/page_6/Picture2.png" className="size-[4vw] relative top-3" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div >
     );
 };
