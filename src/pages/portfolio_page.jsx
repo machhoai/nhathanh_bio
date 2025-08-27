@@ -109,7 +109,7 @@ const PortfolioPage = () => {
                     />
                 </div>
 
-                <div className="h-full w-[60%] relative flex flex-col items-center justify-start pt-20">
+                <div className="h-full w-[60%] relative flex flex-col items-center justify-center">
                     <img src="/portfolio/page_2/Picture5.png" className="absolute right-0 -z-1 w-2/5 top-2/4" alt="" />
                     <span className="pr-15 px-10 flex flex-col gap-15 z-2">
                         <span className="relative flex justify-center gap-8 font-greenth uppercase text-[8vw] leading-none">
