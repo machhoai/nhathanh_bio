@@ -266,7 +266,7 @@ const PortfolioPage = () => {
                                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                             />
                         </div>
-                        <a href="https://www.facebook.com/share/v/15uXrNHQrR/" className="flex items-center hover:underline mx-auto">
+                        <a href="https://www.facebook.com/share/v/15uXrNHQrR/" target="_blank" rel="noopener noreferrer" className="flex items-center hover:underline mx-auto">
                             <p className="uppercase text-[#184deb] text-[1.3vw]">FULL PHIM NGẮN TẠI PAGE MCQ2O STUDIO TRÊN FACEBOOK </p>
                             <img src="/portfolio/page_6/Picture2.png" className="size-[4vw] relative top-3" alt="" />
                         </a>
