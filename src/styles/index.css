@@ -22,3 +22,42 @@
 .font-paytone-one {
     font-family: "PaytoneOne";
 }
+
+/* Áp dụng chung cho mọi div có class scrollable */
+.scrollable {
+    scrollbar-width: thin;
+    /* Firefox */
+    scrollbar-color: #a0a0a0 #00000000;
+    /* Firefox: thumb và track */
+}
+
+/* Chrome, Edge, Safari */
+.scrollable::-webkit-scrollbar {
+    width: 8px;
+    /* Độ rộng thanh scroll dọc */
+    height: 8px;
+    /* Độ cao thanh scroll ngang */
+}
+
+.scrollable::-webkit-scrollbar-track {
+    background: #000000;
+    /* màu nền track */
+    border-radius: 9999px;
+}
+
+.scrollable::-webkit-scrollbar-thumb:hover {
+    background-color: #808080;
+    /* đổi màu khi hover */
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE, Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
